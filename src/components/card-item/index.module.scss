@@ -1,0 +1,155 @@
+.wrapper {
+  height: auto;
+  max-width: 316px;
+  min-width: 215px;
+  flex: 1 1 21%;
+  gap: 20px;
+  border-radius: 10px;
+  border: 1px solid #dddddd;
+  background-color: #ffffff;
+  @media screen and (max-width: 1000px) {
+    gap: 20px;
+  }
+}
+
+.wrapper.dark {
+  background-color: #424436;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.discount {
+  background-color: #f26d22;
+  color: #fff;
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  border-radius: 6px;
+  padding: 4px 8px 4px 8px;
+}
+.discount.none {
+  display: none;
+}
+
+%icon {
+  position: absolute;
+  right: 16px;
+  width: 48px;
+  height: 48px;
+  path {
+    stroke: #424436;
+    fill: #fff;
+  }
+}
+
+%icon:hover {
+  path {
+    fill: #424436;
+  }
+
+  cursor: pointer;
+}
+
+.heart {
+  @extend %icon;
+  top: 16px;
+  &.checked {
+    fill: #887b65;
+
+    path {
+      stroke: #ede7de;;
+      fill: #887b65;
+    }
+  }
+}
+
+.cart {
+  @extend %icon;
+  top: 74px;
+  &.liked {
+    fill: #887b65;
+
+    path {
+      stroke: #ede7de;
+      fill: #887b65;
+    }
+  }
+}
+
+.cardImage {
+  height: 284px;
+  max-width: 316px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.info {
+  padding: 20px;
+  border-top: 1px solid #dddddd;
+}
+
+.info.dark {
+  background-color: #424436;
+  border-top: 1px solid #424436;
+}
+
+.description {
+  color: #424436;
+  font-size: 20px;
+  line-height: 26px;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.description.dark {
+  color: #ffffff;
+}
+
+.newPrice {
+  color: #424436;
+  font-size: 40px;
+  line-height: 44px;
+  font-weight: 600;
+}
+
+.newPrice.dark {
+  color: #ffffff;
+}
+
+.oldPrice {
+  color: #8b8b8b;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  text-decoration: line-through;
+  margin-left: 16px;
+}
+
+.oldPrice.none {
+  display: none;
+}
+
+.prices {
+  margin-top: 16px;
+}
+
+.link {
+  text-decoration: none;
+  color: #424436;
+}
+
+.link.dark {
+  color: #fff;
+}
