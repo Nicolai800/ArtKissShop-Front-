@@ -50,7 +50,7 @@ export const CategoriesLayout = ({ elementsCount = 5, crumbs = true }) => {
           [styles.dark]: theme === "dark",
         })}
       >
-        <h2>Categories</h2>{" "}
+        <h2>Kategorie</h2>{" "}
         <div
           className={cn(styles.lineWrapper, {
             [styles.none]: crumbs === true,

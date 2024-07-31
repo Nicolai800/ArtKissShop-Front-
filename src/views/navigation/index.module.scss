@@ -55,7 +55,7 @@
 }
 
 .header.dark {
-  background-color: #424436;
+  background-color: #524c42;
 
   a {
     color: #ffffff;
@@ -94,4 +94,10 @@ a.active {
     stroke: #fffff1;
     fill: none;
   }
+}
+.logo{
+  height: 120px;
+  width: 120px;
+  background-size: cover;
+
 }

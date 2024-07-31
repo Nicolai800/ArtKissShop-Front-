@@ -3,12 +3,12 @@
   gap: 32px;
   flex-wrap: wrap;
   max-width: 100%;
-  margin: 40px 40px 0px 40px;
+  padding: 40px;
   background-color: #e7dfd3;
 }
 
 .sales.dark {
-  background-color: #424436;
+  background-color: #524c42;
 }
 
 .saleWrapper {
@@ -18,7 +18,7 @@
 }
 
 .saleWrapper.dark {
-  background-color: #424436;
+  background-color: #524c42;
 }
 
 .loading {
@@ -30,7 +30,7 @@
 }
 
 .loading.dark{
-  background-color: #424436;
+  background-color: #524c42;
   color: #fff;
 }
 
@@ -70,7 +70,7 @@
 }
 
 .saleText.dark {
-  background-color: #424436;
+  background-color: #524c42;
   h2 {
     color: #fff;
   }

@@ -11,6 +11,7 @@ import { useSelector } from "react-redux";
 import { getLikedCount } from "../../store/selectors";
 import { getCardCount } from "../../store/selectors";
 import { NavMenu } from "../../components/navigation-menu/nav-menu";
+import artKissLogo from "../../assets/artKissLogo.png";
 
 export const Navigation = () => {
   const [isToggleOn, setIsToggleOn] = useState(false);
@@ -41,7 +42,7 @@ export const Navigation = () => {
     >
       <div className={styles.iconWrapper}>
         <Link to="/">
-          <LogoIcon className={styles.logo} />
+          <div className={styles.logo } style={{ backgroundImage: `url(${artKissLogo})` }}></div>
         </Link>
 
         <IconToggle checked={isToggleOn} onToggle={onSwitchToggle} />
