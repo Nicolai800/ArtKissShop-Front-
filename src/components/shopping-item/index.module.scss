@@ -1,0 +1,180 @@
+.shopingItemWrapper {
+  min-width: 470px;
+  border: 1px solid #dddddd;
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  margin-bottom: 16px;
+
+  @media screen and (max-width: 520px) {
+    min-width: 200px;
+  }
+  
+}
+
+.quantity {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.shopingItemWrapper.dark {
+  background-color: #383a2c;
+  border: 1px solid #8b8b8b;
+}
+.imgWrapper {
+  max-width: 200px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-right: 1px solid #dddddd;
+  object-fit: contain;
+  @media screen and (max-width: 470px) {
+    max-width: 108px;
+  }
+}
+
+.newPrice {
+  color: #424436;
+  font-size: 40px;
+  line-height: 44px;
+  font-weight: 600;
+
+  @media screen and (max-width: 480px) {
+    font-size: 36px;
+    line-height: 40px;
+  }
+}
+
+.newPrice.dark {
+  color: #ffffff;
+}
+
+.oldPrice {
+  color: #8b8b8b;
+  font-weight: 500px;
+  font-size: 20px;
+  line-height: 26px;
+  text-decoration: line-through;
+  margin-top: 12px;
+
+  @media screen and (max-width: 480px) {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+
+.oldPrice.none {
+  display: none;
+}
+
+.prices {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 220px;
+  width: 100%;
+  
+}
+.itemTitle {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+  color: #424436;
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  @media screen and (max-width: 1000px) {
+    margin-bottom: 12px;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+.itemTitle.dark {
+  color: #ffffff;
+}
+
+.xButton {
+  width: 24px;
+  height: 24px;
+  border: none;
+  cursor: pointer;
+  color: #424436;
+  font-size: 20px;
+  font-weight: 600;
+
+  @media screen and (max-width: 1000px) {
+    top: 20px;
+    right: 20px;
+  }
+}
+
+.xButton.dark {
+  background-color: #383a2c;
+}
+
+.itemInfo {
+  padding: 32px;
+  width: 100%;
+
+  @media screen and (max-width: 1000px) {
+    padding: 20px;
+  }
+
+  @media screen and (max-width: 480px) {
+    padding: 12px;
+  }
+}
+
+.buttonsSpan {
+  display: flex;
+  width: 100%;
+  max-width: 200px;
+  min-width: 176px;
+  margin-bottom: 12px;
+  button {
+    color: #8b8b8b;
+    font-size: 40px;
+    width: 58px;
+    height: 58px;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+    border-radius: 6px;
+  }
+  span {
+    width: 100%;
+    max-width: 80px;
+    color: #424436;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    justify-content: center;
+    border: 1px solid #dddddd;
+    display: flex;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 500px) {
+    button {
+      width: 47px;
+      height: 47px;
+    }
+    span {
+      max-width: 60px;
+     
+    }
+  }
+}
+
+.buttonsSpan.dark {
+  button {
+    background-color: #383a2c;
+  }
+  span {
+    background-color: #383a2c;
+    color: #ffffff;
+  }
+}

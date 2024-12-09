@@ -1,0 +1,119 @@
+// .contactWrapper {
+//   display: grid;
+//   grid-template-columns: 1.4fr 1fr;
+//   grid-column-gap: 32px;
+//   grid-row-gap: 32px;
+//   margin-top: 40px;
+//   margin-bottom: 32px;
+//   @media screen and (max-width: 1100px) {
+//     grid-template-columns: 1fr 1fr;
+//   }
+
+//   @media screen and (max-width: 800px) {
+//     grid-template-columns: 2fr 1fr;
+//   }
+
+//   @media screen and (max-width: 580px) {
+//     grid-template-columns:1fr;
+//   }
+// }
+
+.footerWrapper {
+  max-width: 1440px;
+  width: 100%;
+  padding: 40px 40px 80px 40px;
+  background-color: #cfbfa7;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: 1000px) {
+    padding: 32px 20px 0 20px;
+  }
+}
+
+.footerWrapper.dark {
+  background-color: #524c42;
+  color: #fff;
+}
+
+.infoWrapper {
+  a {
+    text-decoration-color: #fffff1;
+  }
+}
+
+// .contactsDivBackground {
+//   background-color: #f2f6d3;
+//   border-radius: 10px;
+//   padding: 32px;
+
+//    @media screen and (max-width: 580px) {
+//      padding: 24px 20px;
+//    }
+// }
+
+// .contactsDivBackground.dark {
+//   background-color: #383a2c;
+// }
+
+.contactsFont {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 44px;
+  color: #424436;
+  margin-top: 16px;
+
+  @media screen and (max-width: 480px) {
+    font-size: 28px;
+    line-height: 30.8px;
+    margin-top: 12px;
+    text-wrap: wrap;
+  }
+}
+
+.contactsFont.dark {
+  color: #ddd2c1;
+}
+
+.contactsFontHeader {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: #8b8b8b;
+
+  @media screen and (max-width: 480px) {
+    font-size: 18px;
+    line-height: 23.4px;
+  }
+}
+
+.instWhatWrapper {
+  margin-top: 16px;
+}
+
+.footerHeader {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 70.4px;
+  color: #424436;
+  background-color: #cfbfa7;
+  padding: 0 40px;
+  margin-top: 2px;
+}
+.footerHeader.dark {
+  background-color: #524c42;
+  color: #fff;
+}
+
+.facebook {
+  margin-left: 2.96px;
+  margin-bottom: 4px;
+  margin-left: 16px;
+}
+
+.logoWrapper {
+  width: 400px;
+  height: 400px;
+  background-size: cover;
+}
